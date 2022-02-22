@@ -10,6 +10,7 @@ export NEW_RELIC_API_KEY=<your_license_key>
 ```
 
 2. Build and run the app using Docker:
+```shell
 docker-compose up
 ```
 
