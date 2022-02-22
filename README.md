@@ -2,6 +2,8 @@
 
 This repo holds the Java app being used for the OpenTelemetry session for SKO '22. It has been instrumented with OpenTelemetry. 
 
+All that is required for you to run the app is Docker. 
+
 ### To run the app:
 
 1. Export your NR ingest key:
