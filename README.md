@@ -1,8 +1,8 @@
-### SKO OTel Session
+# SKO OTel Session
 
 This repo holds the Java app being used for the OpenTelemetry session for SKO '22. It has been instrumented with OpenTelemetry. 
 
-# To run the app:
+### To run the app:
 
 1. Export your NR ingest key:
 ```shell
