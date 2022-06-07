@@ -1,24 +1,37 @@
-# Sample OpenTelemetry Tutorial
 
-This repository contains a simple Java application to calculate the nth number (between 1-90) in the Fibonacci sequence.
+      
+# Getting Started with OpenTelemetry 
 
-The application in this exercise has been instrumented with OpenTelemetry. Follow the instructions below to run the app using Docker and view the data in New Relic One.
+This repository contains a simple Java application to calculate the nth number (between 1-90) in the Fibonacci sequence. 
+
+Follow the steps below to instrument the app with OpenTelemetry and export the generated telemetry to your NR1 account. 
+
+### To instrument the app:
+
+1. 
 
 ### To run the app:
 
-1. Export your NR ingest key:
+1. Export the following environment variables:
+
+* Your NR1 ingest key:
 ```shell
-export NEW_RELIC_API_KEY=<your_license_key>
+export OTEL_EXPORTER_OTLP_HEADERS=api-key=<your_license_key>
 ```
 
-2. Build and run the app using Docker:
+* The endpoint the generated telemetry will be exported to:
 ```shell
-docker-compose up
+export OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.nr-data.net:4317
 ```
 
-3. To exercise, run the following command in a new shell:
+2. Build and run the app:
+```shell
+gradle bootRun
+```
+
+3. Exercise the app by running the following command in a new terminal tab:
 ```shell
 ./load-generator.sh
 ```
 
-4. Head to your NR account to view the data.
+4. Head to your NR1 account to view the data. 
