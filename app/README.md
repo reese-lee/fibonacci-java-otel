@@ -1,4 +1,4 @@
 # Summary
 
-Sample Java application. Read main README. 
+Sample Java application instrumented with OpenTelemetry. Read main README. 
 

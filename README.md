@@ -6,15 +6,11 @@ This repository contains a simple Java application to calculate the nth number (
 
 Follow the steps below to instrument the app with OpenTelemetry and export the generated telemetry to your NR1 account. 
 
-### To instrument the app:
-
-1. 
-
 ### To run the app:
 
 1. Export the following environment variables:
 
-* Your NR1 ingest key:
+* Your NR1 ingest key (replace `<your_license_key>` with your New Relic ingest license key):
 ```shell
 export OTEL_EXPORTER_OTLP_HEADERS=api-key=<your_license_key>
 ```
